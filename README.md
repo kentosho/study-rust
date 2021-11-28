@@ -1,1 +1,1 @@
-# study-rust
+Studying rust with "The Book"
