@@ -27,15 +27,3 @@ pub fn fib_dp_simple(n: i32) -> i32 {
     }
     tmp
 }
-
-#[cfg(test)]
-mod tests_fibonacci {
-    use super::*;
-
-    #[test]
-    fn test_fib() {
-        assert_eq!(55, fib_match(10));
-        assert_eq!(55, fib_one(10));
-        assert_eq!(55, fib_dp_simple(10));
-    }
-}
