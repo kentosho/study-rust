@@ -1,4 +1,4 @@
-pub fn fib_match(n: i32) -> i32 {
+pub fn fib_match(n: i128) -> i128 {
     match n {
         0 => 0,
         1 => 1,
@@ -6,8 +6,8 @@ pub fn fib_match(n: i32) -> i32 {
     }
 }
 
-pub fn fib_one(n: i32) -> i32 {
-    fn func(a: i32, b: i32, c: i32) -> i32 {
+pub fn fib_one(n: i128) -> i128 {
+    fn func(a: i128, b: i128, c: i128) -> i128 {
         if c < 2 {
             return a;
         }
@@ -16,7 +16,7 @@ pub fn fib_one(n: i32) -> i32 {
     func(1, 0, n)
 }
 
-pub fn fib_dp_simple(n: i32) -> i32 {
+pub fn fib_dp_simple(n: i128) -> i128 {
     let mut f1 = 1;
     let mut f2 = 0;
     let mut tmp = 0;
